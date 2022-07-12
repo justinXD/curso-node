@@ -1,3 +1,5 @@
+/*es una buena practica crear funciones para todo codigo que se piensa reutilizar en algun momento
+las funciones van al principio del programa */
 function hola(nombre, miCallback){
     //console.log('hola, soy una funcion asincrona')
     setTimeout(function(){
@@ -30,7 +32,7 @@ function conversacion(nombre, veces, callback) {
         adios(nombre, callback);
     }
 }
-
+//recursividad
 console.log('iniciando proceso...')
 hola('justin', function(nombre){
     conversacion(nombre, 3, function(){
